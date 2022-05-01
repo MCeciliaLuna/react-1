@@ -5,6 +5,7 @@ import Services from "./components/Services/Services";
 import Card from "./components/Card/Card";
 import foto from "./assets/CV.jpg";
 import Information from "./components/Information/Information";
+import Form from "./components/Form/Form";
 
 const App = () => {
   const arrayInformation = [
@@ -26,6 +27,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <Form />
       <Hero />
       <Services />
       <section className="my-4 row">
@@ -49,8 +51,6 @@ const App = () => {
         {
           arrayInformation.map(persona => <Information key={persona.dni} nombre={persona.nombre} edad={persona.edad} altura={persona.descripción} />)
         }
-
-        <button className="btn-primary m-3 rounded">Click me!</button>
       </div>
 
     </div>
