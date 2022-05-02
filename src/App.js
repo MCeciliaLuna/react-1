@@ -6,6 +6,8 @@ import Card from "./components/Card/Card";
 import foto from "./assets/CV.jpg";
 import Information from "./components/Information/Information";
 import Form from "./components/Form/Form";
+import Encendido from "./components/Encendido/Encendido";
+import FormExample from "./components/FormExample/FormExample";
 
 const App = () => {
   const arrayInformation = [
@@ -27,7 +29,9 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <FormExample />
       <Form />
+      <Encendido />
       <Hero />
       <Services />
       <section className="my-4 row">
