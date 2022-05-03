@@ -8,6 +8,7 @@ import Information from "./components/Information/Information";
 import Form from "./components/Form/Form";
 import Encendido from "./components/Encendido/Encendido";
 import FormExample from "./components/FormExample/FormExample";
+import UseEffectExample from "./components/UseEffectExample/UseEffectExample";
 
 const App = () => {
   const arrayInformation = [
@@ -29,6 +30,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <UseEffectExample />
       <FormExample />
       <Form />
       <Encendido />
