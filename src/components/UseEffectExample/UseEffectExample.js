@@ -13,6 +13,7 @@ const UseEffectExample = () => {
 
   useEffect(() => { //use effect sin ninguna dependencia (cuando se busca que una función se ejecute cada vez que se cambia de estado) para que se cargue mientras se monta la aplicación sin ninguna dependencia esa función
     handleConsoleLog()
+   // eslint-disable-next-line react-hooks/exhaustive-deps
    }, [contador]) //sin el contador ejecuta la función una sola vez que arranca el renderizado, no detecta el cambio del contador
   
   return (
